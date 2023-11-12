@@ -11,7 +11,10 @@ function Header() {
   };
 
   return (
-    <div className="bg-no-repeat bg-cover bg-center w-full h-[700px] relative" style={{ backgroundImage: 'url(./asset/bg.png)' }}>
+    <div className="bg-no-repeat bg-cover bg-center w-full h-[700px] relative" style={{ 
+      backgroundImage: 'url(./asset/bg.png)',
+      minHeight: '400px', // Set a minimum height for smaller screens
+    }}>
       <header className="py-5 px-4 md:px-10">
         <div className="container flex justify-between items-center">
           <a href="#" aria-label="Back to homepage" className="flex items-center p-2">

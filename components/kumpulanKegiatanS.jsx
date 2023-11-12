@@ -1,7 +1,7 @@
 // kumpulanKegiatanS.js
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-import data from '../data/kumpulanKegiatanS.json'; // Import data from JSON file
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import data from "../data/kumpulanKegiatanS.json"; // Import data from JSON file
 
 function KumpulanKegiatanS() {
   const [jsonData, setJsonData] = useState([]);
@@ -25,12 +25,12 @@ function KumpulanKegiatanS() {
               />
             </div>
             <h3 class="mt-4 text-2xl text-gray-900 font-Poppins font-semibold">
-        {item.tittle}
-        </h3>
-        <p class="mt-1 text-base text-gray-500 font-Poppins font-normal mb-7">
-        {item.description}
-        </p>
-      </a>
+              {item.tittle}
+            </h3>
+            <p class="mt-1 text-base text-gray-500 font-Poppins font-normal mb-7">
+              {item.description}
+            </p>
+          </a>
         ))}
       </div>
     </div>

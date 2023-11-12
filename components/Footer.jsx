@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="md:pb-0 md:col-span-6">
             <div className="container mx-auto">
               <Image
-                src="/asset/Vector.png"
+                src="/asset/vector.png"
                 alt=""
                 width={200}
                 height={200}

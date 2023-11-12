@@ -1,0 +1,43 @@
+[
+    {
+      "image": "/asset/a.png",
+      "name": "Mrs. Y",
+      "position": "Kepala Sekolah"
+    },
+    {
+        "image": "/asset/b.png",
+        "name": "Mr. X",
+        "position": "Kepala Staff"
+      },
+      {
+        "image": "/asset/c.png",
+        "name": "Mrs. Y",
+        "position": "Guru Matematika"
+      },
+      {
+        "image": "/asset/d.png",
+        "name": "Mr. X",
+        "position": "Guru Biologi"
+      },
+      {
+        "image": "/asset/e.png",
+        "name": "Mrs. Y",
+        "position": "Guru Fisika"
+      },
+      {
+        "image": "/asset/f.png",
+        "name": "Mr. X",
+        "position": "Guru Bahasa"
+      },
+      {
+        "image": "/asset/g.png",
+        "name": "Mrs. Y",
+        "position": "Guru Kimia"
+      },
+      {
+        "image": "/asset/h.png",
+        "name": "Mr. X",
+        "position": "Guru Seni Budaya"
+      }
+  ]
+  

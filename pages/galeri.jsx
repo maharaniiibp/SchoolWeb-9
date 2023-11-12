@@ -6,51 +6,64 @@ import KumpulanKegiatanS from "../components/kumpulanKegiatanS";
 const Galeri = () => {
   return (
     <div>
-      <div className="flex justify-center items-center lg:w-1/2">
-        <Image
+      <main
+        className=" bg-background flex "
+        style={{
+          backgroundImage: "url(asset/bg.png)",
+          backgroundSize: "cover",
+          overflowY: "auto",
+          height: "133vh",
+        }}
+      ></main>
+      <div className="flex flex-col items-center lg:w-1/2">
+        <img
+          className="absolute top-[194px] right-[100px]"
           src="/asset/galeri.png"
-          alt="Galeri Image"
-          width={450}
-          height={550}
-          className="absolute top-[150px] right-[100px]"
+          style={{ width: "450px", height: "550px" }} // Adjust the width and height as needed
         />
-
         <div className="max-w-xl absolute top-60">
           <h1 className="lg:text-5xl font-bold sm:text-6xl py-8 text-zinc-700 lg:leading-snug">
             Galeri
           </h1>
           <p className="mb-12 text-lg sm:mb-8 text-zinc-700">
-            Halaman Yang Akan Memberikan <br />
-            Dokumentasi Kegiatan Sekolah
+            Halaman Yang Akan Memberikan <br /> Dokumentasi Kegiatan Sekolah{" "}
           </p>
         </div>
       </div>
       <KumpulanKegiatanS />
-      <div class="w-[1100px] h-9 justify-between items-center gap-[507px] inline-flex ">
-        <div class="text-neutral-500 text-base font-normal">
+      <div class="mb-12 flex flex-col sm:flex-row items-center justify-between p-5">
+        <div class="text-neutral-500 text-base font-normal mb-3 sm:mb-0 ml-16">
           Menampilkan 9 Dari 21 Data
         </div>
-        <div class="justify-start items-center flex">
-          <div class="text-neutral-500 text-base font-normal">Halaman</div>
-          <div class="justify-start items-center flex">
+
+        <div class="flex items-center">
+          <div class="text-neutral-500 text-base font-normal mb-2 sm:mb-0 sm:mr-2">
+            Halaman
+          </div>
+
+          <div class="flex items-center">
             <div class="w-6 h-6 relative"></div>
-            <img class="" src="./asset/chevron-left.png" />
-            <div class="px-[11px] justify-center items-center flex">
-              <a href="#" class="group">
-                <div class="text-pink-600 text-base font-normal">1</div>
-              </a>
-            </div>
-            <div class="px-[11px] justify-center items-center flex">
-              <a href="#" class="group">
-                <div class="text-neutral-500 text-base font-normal">2</div>
-              </a>
-            </div>
-            <div class="px-[11px] justify-center items-center flex">
-              <a href="#" class="group">
-                <div class="text-neutral-500 text-base font-normal">3</div>
-              </a>
-            </div>
-            <img class="" src="./asset/chevron-right.png" />
+            <img
+              class="hidden sm:inline-block"
+              src="./asset/chevron-left.png"
+            />
+
+            <a href="#" class="group px-2">
+              <div class="text-blue-500 text-base font-normal">1</div>
+            </a>
+
+            <a href="#" class="group px-2 hidden sm:inline-block">
+              <div class="text-neutral-500 text-base font-normal">2</div>
+            </a>
+
+            <a href="#" class="group px-2 hidden sm:inline-block">
+              <div class="text-neutral-500 text-base font-normal">3</div>
+            </a>
+
+            <img
+              class="hidden sm:inline-block"
+              src="./asset/chevron-right.png"
+            />
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ function KumpulanKegiatanS() {
   }, []);
 
   return (
-    <div className="px-20 pb-32">
+    <div className="mt-32 px-20 pb-32 ">
       <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 xl:gap-x-8">
         {jsonData.map((item, index) => (
           <a key={index} href="#" className="group">

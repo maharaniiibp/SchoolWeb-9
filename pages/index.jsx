@@ -5,6 +5,15 @@ import KeunggulanS from "../components/keunggulanS";
 const Home = () => {
   return (
     <div>
+      <main
+        className=" bg-background flex "
+        style={{
+          backgroundImage: "url(asset/bg.png)",
+          backgroundSize: "cover",
+          overflowY: "auto",
+          height: "133vh",
+        }}
+      ></main>
       <div>
         <div className="flex justify-center items-center lg:w-1/2 ">
           <img

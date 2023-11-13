@@ -133,7 +133,7 @@ export default function Navbar() {
                 onClick={handleSmallerScreenNavigation}
                 className="py-5 hover:text-[#CEFF00] cursor-pointer"
               >
-                <Link href="/berita"> Artikel</Link>
+                <Link href="/berita"> Berita</Link>
               </li>
 
               <li

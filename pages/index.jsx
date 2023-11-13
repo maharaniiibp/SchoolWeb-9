@@ -8,7 +8,7 @@ const Home = () => {
       <main
         className=" bg-background flex "
         style={{
-          backgroundImage: "url(asset/bg.png)",
+          backgroundImage: "url(asset/index.png)",
           backgroundSize: "cover",
           overflowY: "auto",
           height: "133vh",
@@ -16,11 +16,11 @@ const Home = () => {
       ></main>
       <div>
         <div className="flex justify-center items-center lg:w-1/2 ">
-          <img
+          {/* <img
             className="absolute top-[150px] right-[100px]"
             src="/asset/beranda.png"
             style={{ width: "450px", height: "550px" }} // Adjust the width and height as needed
-          />{" "}
+          />{" "} */}
           <div className="max-w-xl absolute top-60">
             {" "}
             {/* Atur margin-top di sini */}

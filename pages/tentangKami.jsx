@@ -8,18 +8,18 @@ const TentangKami = () => {
       <main
         className=" bg-background flex "
         style={{
-          backgroundImage: "url(asset/bg.png)",
+          backgroundImage: "url(asset/tentangKita.png)",
           backgroundSize: "cover",
           overflowY: "auto",
           height: "133vh",
         }}
       ></main>
       <div className="flex justify-center items-center lg:w-1/2">
-        <img
+        {/* <img
           className="absolute top-[282px] right-[100px]"
           src="/asset/tentangKita.png"
           style={{ width: "450px", height: "550px" }} // Adjust the width and height as needed
-        />
+        /> */}
         <div className="mt-[60px] max-w-xl absolute top-60">
           <h1 className="lg:text-5xl font-bold sm:text-6xl py-8 text-zinc-700 lg:leading-snug">
             Tentang Kami

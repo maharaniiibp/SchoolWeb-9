@@ -12,25 +12,24 @@ const Kontak = () => {
           height: "133vh",
         }}
       ></main>
-      <div className="flex flex-col items-center lg:w-1/2">
+     <div className="flex justify-center items-center lg:w-1/2">
         <img
-          className="absolute top-[194px] right-[100px]"
-          src="/asset/kontak.png"
+          className="absolute top-[282px] right-[100px]"
+          src="/asset/tentangKita.png"
           style={{ width: "450px", height: "550px" }} // Adjust the width and height as needed
         />
-        <div className="max-w-xl mt-8 lg:absolute lg:top-60 lg:left-0">
-          <h1 className="text-4xl font-bold lg:text-5xl text-zinc-700 leading-snug">
+        <div className="mt-[60px] max-w-xl absolute top-60">
+          <h1 className="lg:text-5xl font-bold sm:text-6xl py-8 text-zinc-700 lg:leading-snug">
             Kontak
           </h1>
-          <p className="mt-4 text-base lg:text-lg text-zinc-700">
-            Anda Membutuhkan Bantuan Bertanya Atau Sekedar <br />
-            Berbincang Kami Siap Membantu{" "}
+          <p className="mb-12 text-lg sm:mb-8 text-zinc-700">
+          Anda Membutuhkan Bantuan Bertanya Atau Sekedar <br /> Berbincang Kami Siap Membantu{" "}
           </p>
         </div>
       </div>
 
-      <div className="container mx-auto mt-8 px-4 lg:flex lg:justify-between">
-        <div className="lg:flex flex-col text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left mb-8 lg:mb-0">
+      <div className="container mx-auto mt-16 px-4 lg:flex lg:justify-between">
+        <div className="mt-24 lg:flex flex-col text-center rounded-sm lg:max-w-lg xl:max-w-lg lg:text-left lg:mb-0 mb-24">
           <h1 className="text-4xl font-bold lg:text-5xl leading-snug text-zinc-700">
             Kontak <br /> Kami
           </h1>
@@ -39,7 +38,7 @@ const Kontak = () => {
             Get Touch Anda Dapat Menelepon Atau Mengobrol Bersama Kami
           </p>
         </div>
-        <div className="w-full lg:w-[550px] pl-[10px] pr-[10px] lg:pl-[71px] lg:pr-[113px] pt-[86px] flex-col justify-end">
+        <div className="mb-12 w-full lg:w-[550px] pl-[10px] pr-[10px] lg:pl-[71px] lg:pr-[113px] pt-[86px] flex-col justify-end">
           <p className="mt-4 text-xl text-zinc-700">Number</p>
           <p className="mb-4 text-base lg:text-lg text-gray-500">
             (229) 555-0109 (405)

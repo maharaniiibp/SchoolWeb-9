@@ -16,11 +16,11 @@ const TentangKami = () => {
       ></main>
       <div className="flex justify-center items-center lg:w-1/2">
         <img
-          className="absolute top-[194px] right-[100px]"
+          className="absolute top-[282px] right-[100px]"
           src="/asset/tentangKita.png"
           style={{ width: "450px", height: "550px" }} // Adjust the width and height as needed
         />
-        <div className="max-w-xl absolute top-60">
+        <div className="mt-[60px] max-w-xl absolute top-60">
           <h1 className="lg:text-5xl font-bold sm:text-6xl py-8 text-zinc-700 lg:leading-snug">
             Tentang Kami
           </h1>
@@ -145,24 +145,20 @@ const TentangKami = () => {
       </section>
 
       {/* video profil */}
-      <div className="mt-6 py-8">
-        <div className="mt-8 py-2 lg:px-6 lg:mt-0">
-          <h1 className="font-semibold text-center text-4xl py-5 text-zinc-700">
+      <div class="py-6 lg:mt-28 text-center text-gray-800">
+          <h2 class="text-blue-400 text-base lg:text-2xl font-normal  mb-3">
+            Cuplikan Sekolah
+          </h2>
+          <h1 class="mb-3 text-2xl lg:text-5xl font-bold font-SF Pro Rounded text-blue-950">
             Video Profil
           </h1>
-          <h2 className="font-semibold text-center text-xl text-zinc-700">
-            Berikut adalah video Profil dari sekolah kami
-          </h2>
-          <br />
-          <Image
-            src="/asset/videoprofil.png"
-            alt="Video Profil"
-            width={1100}
-            height={469.33}
-            className="w-full h-full object-cover rounded-lg mx-auto mt-2 mb-8"
-          />
+          <iframe
+            src="https://www.youtube.com/embed/VIDEO_ID"
+            frameborder="0"
+            allowfullscreen
+            class="mx-auto rounded-xl md:w-[650px] lg:w-[1100px] md:h-[300px] lg:h-[500px]"
+          ></iframe>
         </div>
-      </div>
 
       {/* Guru dan Staff Sekolah */}
       <section>

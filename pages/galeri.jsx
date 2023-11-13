@@ -15,21 +15,22 @@ const Galeri = () => {
           height: "133vh",
         }}
       ></main>
-      <div className="flex flex-col items-center lg:w-1/2">
+      <div className="flex justify-center items-center lg:w-1/2">
         <img
-          className="absolute top-[194px] right-[100px]"
+          className="absolute top-[282px] right-[100px]"
           src="/asset/galeri.png"
           style={{ width: "450px", height: "550px" }} // Adjust the width and height as needed
         />
-        <div className="max-w-xl absolute top-60">
+        <div className="mt-[60px] max-w-xl absolute top-60">
           <h1 className="lg:text-5xl font-bold sm:text-6xl py-8 text-zinc-700 lg:leading-snug">
             Galeri
           </h1>
           <p className="mb-12 text-lg sm:mb-8 text-zinc-700">
-            Halaman Yang Akan Memberikan <br /> Dokumentasi Kegiatan Sekolah{" "}
+          Halaman Yang Akan Memberikan <br /> Dokumentasi Kegiatan Sekolah {" "}
           </p>
         </div>
       </div>
+      
       <KumpulanKegiatanS />
       <div class="mb-12 flex flex-col sm:flex-row items-center justify-between p-5">
         <div class="text-neutral-500 text-base font-normal mb-3 sm:mb-0 ml-16">

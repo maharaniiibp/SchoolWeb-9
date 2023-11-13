@@ -7,38 +7,41 @@
 @import url("https://db.onlinewebfonts.com/t/060fd297f19446447a9a1325ad5b889b.woff");
 
 :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 255, 255, 255; /* Ubah menjadi putih */
-    --background-end-rgb: 255, 255, 255; /* Ubah menjadi putih */
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --foreground-rgb: 255, 255, 255;
-      --background-start-rgb: 0, 0, 0;
-      --background-end-rgb: 0, 0, 0;
-    }
-  }
-  
-  body {
-    color: rgb(var(--foreground-rgb));
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        rgb(var(--background-end-rgb))
-      )
-      rgb(var(--background-start-rgb));
-  }
-  
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255; /* Ubah menjadi putih */
+  --background-end-rgb: 255, 255, 255; /* Ubah menjadi putih */
+}
 
-@layer base{
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgb(var(--background-end-rgb))
+  ) rgb(var(--background-start-rgb));
+}
+
+@layer base {
   @font-face {
-      font-family: "SF Pro Rounded";
-      src: url("https://db.onlinewebfonts.com/t/060fd297f19446447a9a1325ad5b889b.woff");
+    font-family: "SF Pro Rounded";
+    src: url("https://db.onlinewebfonts.com/t/060fd297f19446447a9a1325ad5b889b.woff");
   }
 
+  h1 {
+    font-family: "SF Pro Rounded", sans-serif;
+  }
+}
 
-  h1{
-      font-family: SF Pro Rounded;
+@media (prefers-color-scheme: light) {
+  body {
+    background: #ffffff; /* Set the background color to white in light mode */
   }
 }

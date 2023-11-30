@@ -1,18 +1,41 @@
-"use client";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useRouter } from "next/router";
 
 export default function Navbar() {
   const router = useRouter();
   const [menuIcon, setIcon] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
 
   const handleSmallerScreenNavigation = () => {
     setIcon(!menuIcon);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setScrolling(true);
+      } else {
+        setScrolling(false);
+      }
+    };
+
+    // Attach the event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Detach the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Empty dependency array ensures that this effect runs once on mount
+
   return (
-    <header className=" text-zinc-700 w-full ease-in duration-300 fixed top-0 left-0 z-20 px-12 ">
+    <header
+      className={`text-zinc-700 w-full ease-in duration-300 fixed top-0 left-0 z-20 px-12 ${
+        scrolling ? "bg-slate-500" : "" // Set your desired background color, for example, grey
+      }`}
+    >
       <nav className="max-w-[1366px] mx-auto h-[100px] flex justify-between items-center p-2 font-abc">
         <div className="relative z-10">
           <Link href="/" onClick={handleSmallerScreenNavigation}>

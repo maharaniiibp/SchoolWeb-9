@@ -4,32 +4,30 @@ import Anggota from "@/components/anggota";
 
 const TentangKami = () => {
   return (
-    <div>
-      <main
-        className=" bg-background flex "
-        style={{
-          backgroundImage: "url(asset/tentangKita.png)",
-          backgroundSize: "cover",
-          overflowY: "auto",
-          height: "133vh",
-        }}
-      ></main>
-      <div className="flex justify-center items-center lg:w-1/2">
-        {/* <img
-          className="absolute top-[282px] right-[100px]"
-          src="/asset/tentangKita.png"
-          style={{ width: "450px", height: "550px" }} // Adjust the width and height as needed
-        /> */}
-        <div className="mt-[60px] max-w-xl absolute top-60">
-          <h1 className="lg:text-5xl font-bold sm:text-6xl py-8 text-zinc-700 lg:leading-snug">
-            Tentang Kami
-          </h1>
-          <p className="mb-12 text-lg sm:mb-8 text-zinc-700">
-            Penjelasan Tentang Sekolah Kami Yang Dapat <br /> Menambah Referesi
-            Anda{" "}
-          </p>
+    <div className="bg-white">
+      <section
+        className="bg-cover h-auto bg-center w-full"
+        style={{ backgroundImage: "url('asset/background.png')" }}
+      >
+        <div className="container pt-40">
+          <div className="flex flex-wrap">
+            <div className="w-full md:w-1/2">
+              <div class="ml-8 lg:max-w-lg text-center md:text-left lg:text-left md:px-6 mt-8 md:mt-10 lg:mt-0">
+                <h2 class="text-3xl font-bold text-neutral-700 lg:text-5xl lg:-mr-[20rem] lg:leading-[60px]">
+                  Tentang Kami
+                </h2>
+                <p class="mt-3 text-neutral-500 lg:text-xl lg:-mr-[15rem]">
+                  Penjelasan Tentang Seokolah Kami Yang Dapat <br />
+                  Menambah Referesi Anda{" "}
+                </p>
+              </div>
+            </div>
+            <div className="w-full md:w-1/2">
+              <img src="asset/tentangKitaa.png" alt="" />
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
 
       {/* sekolah mulia alam insan berkarya */}
       <div className="container px-32 py-16 mx-auto">
@@ -43,11 +41,11 @@ const TentangKami = () => {
           />
 
           <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
-            <h1 className="text-4xl font-bold text-zinc-700 dark:text-white lg:text-4xl lg:w-96">
+            <h1 className="text-4xl font-bold text-zinc-700  lg:text-4xl lg:w-96">
               Sekolah Alam <br /> Insan Mulia Berkarya
             </h1>
 
-            <p className="max-w-lg mt-6 text-gray-500 dark:text-gray-400">
+            <p className="max-w-lg mt-6 text-gray-500 ">
               Sekolah Kami merupakan sekolah informal yang dikelola untuk
               membantu anak mengembangkan bakat dan kemampuannya. Dengan
               memberikan kurikulum terbaik agar anak bisa memilih minatnya dan
@@ -78,12 +76,12 @@ const TentangKami = () => {
             {/* Keunggulan 1 */}
             <div className="self-stretch p-6 justify-start items-center gap-8 flex">
               <div className="bg-yellow-400 rounded-full justify-start items-start gap-2.5 flex">
-                <div className="w-7 h-7 relative">
+                <div className="w-10 h-10 relative">
                   <Image
                     src="/asset/book.png"
                     alt="Menggunakan Kurikulum Terbaru"
-                    width={28}
-                    height={28}
+                    width={40}
+                    height={40}
                   />
                 </div>
               </div>
@@ -100,18 +98,18 @@ const TentangKami = () => {
             {/* Keunggulan 2 */}
             <div className="self-stretch p-6 justify-start items-center gap-8 flex">
               <div className="bg-red-400 rounded-full justify-start items-start gap-2.5 flex">
-                <div className="w-7 h-7 relative">
+                <div className="w-10 h-10 relative">
                   <Image
                     src="/asset/clock.png"
-                    alt="Efektifitas Waktu Saat Belajar Disekolah"
-                    width={28}
-                    height={28}
+                    alt="Efektivitas Waktu Saat Belajar Disekolah"
+                    width={40}
+                    height={40}
                   />
                 </div>
               </div>
               <div className="self-stretch flex-col justify-start items-start gap-2 flex">
                 <div className="text-zinc-700 text-xl font-medium text-center md:text-left">
-                  Efektifitas Waktu Saat Belajar Disekolah
+                  Efektivitas Waktu Saat Belajar Disekolah
                 </div>
                 <div className="text-zinc-700 font-normal text-center md:text-left">
                   Waktu belajar yang dirancang agar para siswa tidak jenuh
@@ -122,12 +120,12 @@ const TentangKami = () => {
             {/* Keunggulan 3 */}
             <div className="self-stretch p-6 justify-start items-center gap-8 flex">
               <div className="bg-sky-500 rounded-full justify-start items-start gap-5 flex">
-                <div className="w-7 h-7 relative">
+                <div className="w-10 h-10 relative">
                   <Image
                     src="/asset/pen-tool.png"
                     alt="Penyaluran Bakat dan Minat Siswa"
-                    width={28}
-                    height={28}
+                    width={40}
+                    height={40}
                   />
                 </div>
               </div>
@@ -145,26 +143,26 @@ const TentangKami = () => {
       </section>
 
       {/* video profil */}
-      <div class="py-6 lg:mt-28 text-center text-gray-800">
-          <h2 class="text-blue-400 text-base lg:text-2xl font-normal  mb-3">
-            Cuplikan Sekolah
-          </h2>
-          <h1 class="mb-3 text-2xl lg:text-5xl font-bold font-SF Pro Rounded text-blue-950">
-            Video Profil
-          </h1>
-          <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID"
-            frameborder="0"
-            allowfullscreen
-            class="mx-auto rounded-xl md:w-[650px] lg:w-[1100px] md:h-[300px] lg:h-[500px]"
-          ></iframe>
+      <div class="py-6 lg:mt-24 text-center text-gray-800 mb-8">
+        <div className="text-neutral-700 text-[56px] font-semibold font-['SF Pro Rounded'] tracking-widest">
+          Video Profil
         </div>
+        <div className="text-neutral-700 text-2xl font-normal font-['Poppins']">
+          Berikut adalah video profil dari sekolah kami
+        </div>
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID"
+          frameborder="0"
+          allowfullscreen
+          class="mx-auto rounded-xl md:w-[650px] lg:w-[1100px] md:h-[300px] lg:h-[500px] mt-8"
+        ></iframe>
+      </div>
 
       {/* Guru dan Staff Sekolah */}
       <section>
         <div className="mt-1 py-8">
           <div className="py-2 lg:px-6 lg:mt-0">
-            <h1 className="text-4xl font-bold text-center text-gray-800 dark:text-white lg:text-4xl">
+            <h1 className="text-4xl font-bold text-center text-gray-800  lg:text-4xl">
               Guru dan Staff Sekolah
             </h1>
           </div>

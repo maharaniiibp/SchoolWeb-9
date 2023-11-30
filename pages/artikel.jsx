@@ -14,9 +14,8 @@ const artikel = () => {
         }}
       ></main>
 
-      <div className="container top-12 sm:top-24 md:top-32 lg:top-48 absolute">
-        <h1 className="text-neutral-700 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-text-2xl font-bold tracking-widest mb-2 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 ml-4 sm:ml-6 md:ml-8 lg:ml-12 xl:ml-24">
-          {" "}
+      <div className="ml-24 container top-12 sm:top-24 md:top-32 lg:top-48 absolute">
+        <h1 className="text-neutral-700 text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-text-xl font-bold tracking-widest mb-2 sm:mb-3 md:mb-4 lg:mb-5 xl:mb-6 ml-4 sm:ml-6 md:ml-8 lg:ml-12 xl:ml-24 font-['SF Pro Rounded'] ">
           Kegiatan Belajar Mengajar Offline Dimulai
         </h1>
 
@@ -24,7 +23,7 @@ const artikel = () => {
           12 Desember 2020
         </p>
 
-        <div className="mt-2 sm:mt-4 py-8 px-4 sm:px-6 lg:px-8">
+        <div className="mt-4 md:mt-12 py-8 px-4 sm:px-6 lg:px-8">
           {" "}
           <Image
             src="/asset/svhoolbutton.png"
@@ -36,7 +35,7 @@ const artikel = () => {
         </div>
       </div>
 
-      <p className="mx-auto py-4 px-2 text-left text-neutral-700 text-sm md:text-base lg:text-lg font-normal mt-8 sm:mt-28 sm:ml-2 sm:mr-2 md:ml-6 md:mr-6 lg:ml-16 lg:mr-16 xl:ml-24 xl:mr-24">
+      <p className=" mx-auto py-4 px-2 text-left text-neutral-700 text-sm md:text-base lg:text-lg font-normal mt-8 sm:mt-28 sm:ml-2 sm:mr-2 md:ml-6 md:mr-6 lg:ml-16 lg:mr-16 xl:ml-24 xl:mr-24">
         Jika anak kita ditanya apa mimpinya pasti jawabnya saya ingin kembali
         belajar di sekolah. Saya ingin bertemu dengan teman-teman sekelas saya.
         Begitupun sebagian besar orang tua, mimpi mereka adalah melihat anaknya
@@ -90,33 +89,35 @@ const artikel = () => {
         pembelajaran tatap muka meskipun terbatas.
       </p>
 
-      <div className="text-gray-500 text-lg font-normal mt-8 sm:mt-12 ml-4 sm:ml-6 md:ml-8 lg:ml-12 xl:ml-24 mb-4">
+      <div className=" text-gray-500 text-lg font-normal mt-8 sm:mt-12 sm:ml-2 md:ml-8 lg:ml-12 xl:ml-24">
         Bagikan Artikel
       </div>
+
       {/* social media icon */}
-      <div className="flex justify-center items-start gap-4 ml-4 sm:ml-6 md:ml-8 lg:ml-12 xl:ml-24">
+      <div className="flex  items-left gap-4 ml-4 sm:ml-6 md:ml-8 lg:ml-12 xl:ml-24">
         <a href="#" className="group">
-          <div className="p-2 justify-start items-start gap-2.5 flex">
-            <div className="w-5 h-5 relative ">
+          <div className="p-4 rounded-full justify-center items-left gap-2.5 flex">
+            <div className="w-8 h-8 relative">
               <Image src="/asset/link.png" alt="Link" layout="fill" />
             </div>
           </div>
         </a>
         <a href="#" className="group">
-          <div className="p-2  rounded-[40px] justify-start items-start gap-2.5 flex">
-            <div className="w-5 h-5 relative">
+          <div className="p-4 rounded-full justify-center items-left gap-2.5 flex">
+            <div className="w-8 h-8 relative">
               <Image src="/asset/wa.png" alt="WhatsApp" layout="fill" />
             </div>
           </div>
         </a>
         <a href="#" className="group">
-          <div className="p-2  rounded-[40px] justify-start items-start gap-2.5 flex">
-            <div className="w-5 h-5 relative">
+          <div className="p-4 rounded-full justify-center items-left gap-2.5 flex">
+            <div className="w-8 h-8 relative">
               <Image src="/asset/facebook.png" alt="Facebook" layout="fill" />
             </div>
           </div>
         </a>
       </div>
+
       <div className="mt-8">
         <div className="w-full px-4 xl:px-20">
           <div className="text-zinc-700 font-bold mt-20 px-4 text-2xl sm:text-3xl leading-tight">

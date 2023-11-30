@@ -38,40 +38,38 @@ const Home = () => {
       <KeunggulanS />
 
       {/* sekolah Alam insan mulia */}
-      <div className="mt-14">
-        <div className="container px-8 sm:px-16 md:px-24 lg:px-32 py-8 md:py-16 mx-auto">
-          <div className="lg:-mx-6 lg:flex lg:items-center">
-            <Image
-              src="/asset/orangsatu.png"
-              alt="Sekolah Alam Insan Mulia Berkarya"
-              width={552}
-              height={533}
-              layout="responsive"
-            />
+      <div className="container px-32 py-16 mx-auto">
+  <div className="lg:-mx-6 lg:flex lg:items-center">
+  <img
+  src="/asset/orangsatu.png"
+  alt="Sekolah Alam Insan Mulia Berkarya"
+  width={450}
+  height={450}
+  layout="responsive"
+  className="block mx-auto" // Add a class for centering the image
+/>
 
-            <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
-              <h1 className="text-4xl text-neutral-700 font-bold lg:text-4xl lg:w-96">
-                Sekolah Alam <br />
-                Insan Mulia Berkarya
-              </h1>
+    <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+            <h1 className="text-4xl font-bold text-zinc-700  lg:text-4xl lg:w-96">
+              Sekolah Alam <br /> Insan Mulia Berkarya
+            </h1>
 
-              <p className="max-w-lg mt-6 text-neutral-500 text-lg font-['Poppins']">
-                Sekolah Kami merupakan sekolah informal yang dikelola untuk
-                membantu anak mengembangkan bakat dan kemampuannya. Dengan
-                memberikan kurikulum terbaik agar anak bisa memilih minatnya dan
-                fokus mengembangkan minat tersebut. Sekolah ini didirikan sejak
-                tahun 1989 dan terus berkembang.
-              </p>
+            <p className="max-w-lg mt-6 text-gray-500 ">
+              Sekolah Kami merupakan sekolah informal yang dikelola untuk
+              membantu anak mengembangkan bakat dan kemampuannya. Dengan
+              memberikan kurikulum terbaik agar anak bisa memilih minatnya dan
+              fokus mengembangkan minat tersebut. Sekolah ini didirikan sejak
+              tahun 1989 dan terus berkembang
+            </p>
 
-              <div className="flex flex-col sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mt-10">
-                <a
-                  rel=""
-                  href="#"
-                  className="w-full sm:w-auto px-6 sm:px-8 py-3 text-lg bg-blue-500 text-white font-semibold rounded-2xl border-gray-100"
-                >
-                  Mulai Belajar
-                </a>
-              </div>
+            <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start mt-10">
+              <a
+                rel=""
+                href="#"
+                className="px-8 py-3 text-lg bg-blue-500 text-white font-semibold rounded-2xl border-gray-100"
+              >
+                Mulai Belajar
+              </a>
             </div>
           </div>
         </div>

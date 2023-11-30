@@ -31,16 +31,17 @@ const TentangKami = () => {
 
       {/* sekolah mulia alam insan berkarya */}
       <div className="container px-32 py-16 mx-auto">
-        <div className="lg:-mx-6 lg:flex lg:items-center">
-          <Image
-            src="/asset/orangsatu.png"
-            alt="Sekolah Alam Insan Mulia Berkarya"
-            width={600}
-            height={900}
-            layout="responsive"
-          />
+  <div className="lg:-mx-6 lg:flex lg:items-center">
+  <img
+  src="/asset/orangsatu.png"
+  alt="Sekolah Alam Insan Mulia Berkarya"
+  width={450}
+  height={450}
+  layout="responsive"
+  className="block mx-auto" // Add a class for centering the image
+/>
 
-          <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+    <div className="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
             <h1 className="text-4xl font-bold text-zinc-700  lg:text-4xl lg:w-96">
               Sekolah Alam <br /> Insan Mulia Berkarya
             </h1>
@@ -180,48 +181,48 @@ const TentangKami = () => {
       </div>
 
       {/* logo */}
-      <div className="mt-16 px-4 sm:px-8 md:px-16 lg:px-40 xl:px-40 2xl:px-40 flex flex-col sm:flex-row justify-center items-center gap-4">
+      <div className="mt-16 px-4 sm:px-8 md:px-16 lg:px-40 xl:px-40 2xl:px-40 flex flex-wrap sm:flex-row justify-center items-center gap-2">
         <Image
           src="/asset/DBL.png"
           alt="DBL Logo"
-          width={140}
-          height={90}
-          className="max-w-xs mb-4 sm:mb-0"
+          width={128}
+          height={80}
+          className="max-w-xs mb-4 sm:mb-0 mr-8" // Tambahkan margin kanan
         />
         <Image
           src="/asset/Pertamina.png"
           alt="Pertamina Logo"
-          width={140}
-          height={90}
-          className="max-w-xs mb-4 sm:mb-0"
+          width={128}
+          height={80}
+          className="max-w-xs mb-4 sm:mb-0 mr-8" // Tambahkan margin kanan
         />
         <Image
           src="/asset/Drumband.png"
           alt="Drumband Logo"
-          width={140}
-          height={90}
-          className="max-w-xs mb-4 sm:mb-0"
+          width={128}
+          height={80}
+          className="max-w-xs mb-4 sm:mb-0 mr-8" // Tambahkan margin kanan
         />
         <Image
           src="/asset/Djarum.png"
           alt="Djarum Logo"
-          width={140}
-          height={90}
-          className="max-w-xs mb-4 sm:mb-0"
+          width={128}
+          height={80}
+          className="max-w-xs mb-4 sm:mb-0 mr-8" // Tambahkan margin kanan
         />
         <Image
           src="/asset/Taekwondo.png"
           alt="Taekwondo Logo"
-          width={140}
-          height={90}
-          className="max-w-xs mb-4 sm:mb-0"
+          width={128}
+          height={80}
+          className="max-w-xs mb-4 sm:mb-0 mr-8" // Tambahkan margin kanan
         />
         <Image
           src="/asset/DBL.png"
           alt="DBL Logo"
-          width={140}
-          height={90}
-          className="max-w-xs mb-4 sm:mb-0"
+          width={128}
+          height={80}
+          className="max-w-xs mb-4 sm:mb-0" // Tidak perlu margin di gambar terakhir
         />
       </div>
     </div>
